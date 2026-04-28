@@ -87,10 +87,10 @@ def main():
 
     # ── Gemini ────────────────────────────────────────────────────────────────
     if os.environ.get("GEMINI_API_KEY"):
-        print("\nGemini 2.0 Flash-Lite (LLM):")
+        print("\nGemini 2.5 Flash (LLM):")
         import google.generativeai as genai
         genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-        model = genai.GenerativeModel("gemini-2.0-flash-lite")
+        model = genai.GenerativeModel("gemini-2.5-flash")
         results["gemini"] = check(
             "Simple prompt",
             lambda: model.generate_content("Reply with: OK").text.strip()[:20]

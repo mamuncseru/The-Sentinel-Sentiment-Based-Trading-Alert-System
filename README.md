@@ -118,7 +118,7 @@ MIN_ALERT_CONFIDENCE      = 55    # minimum LLM confidence to send Telegram
 
 ### Switch LLM model
 ```python
-PRIMARY_LLM_MODEL  = "gemini-2.0-flash-lite"   # cheapest
+PRIMARY_LLM_MODEL  = "gemini-2.5-flash"   # cheapest
 # PRIMARY_LLM_MODEL = "gemini-2.5-flash-lite"  # better quality, slightly more
 # PRIMARY_LLM_MODEL = "deepseek-chat"          # excellent reasoning, cheap
 ```

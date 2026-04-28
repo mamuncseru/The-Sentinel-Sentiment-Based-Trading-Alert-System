@@ -94,7 +94,7 @@ FINBERT_BATCH_SIZE  = 16
 FINBERT_MAX_CHARS   = 1000  # truncate input text to this length
 
 # ─── LLM models ──────────────────────────────────────────────────────────────
-PRIMARY_LLM_MODEL   = "gemini-2.0-flash-lite"   # cheapest viable option
+PRIMARY_LLM_MODEL   = "gemini-2.5-flash"   # cheapest viable option
 FALLBACK_LLM_MODEL  = "deepseek-chat"            # DeepSeek V3.2 fallback
 LLM_MAX_OUTPUT_TOKENS = 300
 LLM_TEMPERATURE     = 0.1   # low = more deterministic output

@@ -96,7 +96,7 @@ def test_save_analysis(tmp_db):
         "reasoning":      "Strong sentiment reversal on high volume.",
         "entry_note":     "Wait for morning confirmation.",
         "stop_loss_note": "Close below -5% from entry.",
-        "model_used":     "gemini-2.0-flash-lite",
+        "model_used":     "gemini-2.5-flash",
     }
     row_id = save_analysis("NVDA", analysis, "context text", db_path=tmp_db)
     assert row_id > 0
