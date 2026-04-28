@@ -1,0 +1,38 @@
+# The Sentinel — Python dependencies
+# Install: pip install -r requirements.txt
+
+# ── Data collection ───────────────────────────────────────────
+finnhub-python==2.4.20          # Finnhub news API
+yfinance==0.2.55                # Yahoo Finance price data (unofficial, free)
+praw==7.8.1                     # Reddit API wrapper
+feedparser==6.0.11              # Google News RSS parser
+requests==2.32.3                # HTTP client (StockTwits, Telegram, Fear&Greed)
+
+# ── Sentiment model ───────────────────────────────────────────
+transformers==4.47.0            # Hugging Face transformers (FinBERT)
+torch==2.5.1                    # PyTorch (CPU-only — saves 3 GB vs GPU build)
+
+# ── LLM APIs ─────────────────────────────────────────────────
+google-generativeai==0.8.3      # Gemini API (primary — cheapest)
+openai==1.58.1                  # OpenAI SDK — also used for DeepSeek (compatible API)
+
+# ── Scheduling ────────────────────────────────────────────────
+APScheduler==3.10.4             # Job scheduler
+pytz==2024.2                    # Timezone handling
+
+# ── Database ──────────────────────────────────────────────────
+# SQLite is built into Python — no extra package needed
+
+# ── Paper trading ─────────────────────────────────────────────
+alpaca-py==0.35.0               # Alpaca trading API (paper + live)
+
+# ── Dashboard ─────────────────────────────────────────────────
+streamlit==1.41.1               # Web dashboard (self-hosted, free)
+pandas==2.2.3                   # Data manipulation
+numpy==2.1.3                    # Numerical operations
+
+# ── Environment & utilities ───────────────────────────────────
+python-dotenv==1.0.1            # Load .env file
+
+# ── Testing ───────────────────────────────────────────────────
+pytest==8.3.4

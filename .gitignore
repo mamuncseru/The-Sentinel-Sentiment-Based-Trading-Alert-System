@@ -1,0 +1,47 @@
+# Environment & secrets
+.env
+*.env
+
+# Database (contains your trading data)
+*.db
+*.db-shm
+*.db-wal
+
+# LLM call counter
+llm_call_count.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Models cache (FinBERT downloads here)
+~/.cache/huggingface/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
